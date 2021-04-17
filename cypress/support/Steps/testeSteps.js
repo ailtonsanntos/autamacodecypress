@@ -36,10 +36,6 @@ And("clico na opcao movies", ()=>{
     Pagina.preencherCampoHobbies();
 })
 
-And("seleciono a opcao portugese", ()=>{
-    Pagina.selecionarLanguage();    
-})
-
 And("preencho o campo senha", ()=>{
     Pagina.preencherCampoSenha();
 })

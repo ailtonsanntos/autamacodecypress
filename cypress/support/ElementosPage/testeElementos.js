@@ -14,10 +14,6 @@ class testElementos{
 
     campoHobbies = ()=> {return '//*[@id="basicBootstrapForm"]/div[6]/div/div[2]/label'}
 
-    clicarcampoLanguage = ()=> { return '#msdd' }
-
-    selecionarLanguage = ()=> {return '#basicBootstrapForm > div:nth-child(7) > div > multi-select > div:nth-child(2) > ul > li:nth-child(29) > a'}
-
     campoSenha = ()=>{return '//*[@id="firstpassword"]'}
 
     campoConfirmarSenha = ()=> {return '//*[@id="secondpassword"]'}

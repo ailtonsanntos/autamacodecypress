@@ -40,19 +40,15 @@ class TestePage{
     preencherCampoHobbies(){
         cy.xpath(Elementos.campoHobbies()).click()
     }
-
-    selecionarLanguage(){
-        cy.get(Elementos.clicarcampoLanguage()).click()
-        cy.get(Elementos.selecionarLanguage()).contains('Portuguese').click()
-    }
+   
 
     preencherCampoSenha(){
         cy.wait(2000)
-        cy.xpath(Elementos.campoSenha()).type('123456')
+        cy.xpath(Elementos.campoSenha()).type('12345678')
     }
 
     preencherCampoConfirmarSenha(){
-        cy.xpath(Elementos.campoConfirmarSenha()).type('123456')
+        cy.xpath(Elementos.campoConfirmarSenha()).type('12345678')
     }
 
     clicarbotaoRefresh(){

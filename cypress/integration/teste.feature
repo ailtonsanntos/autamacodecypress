@@ -10,7 +10,6 @@ Feature: Automatizar pagina de cadastro
       And preencho o campo telefone
       And clica na opcao male
       And clico na opcao movies
-      And seleciono a opcao portugese
       And preencho o campo senha
       And preencho o campo confirmar senha
       And clico no botao refresh
