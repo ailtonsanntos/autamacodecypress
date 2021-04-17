@@ -1,0 +1,19 @@
+{
+    
+"baseUrl" : "http://demo.automationtesting.in/Register.html",
+"viewportHeight": 768,
+"viewportWidth" : 1366,
+"defaultCommandTimeout": 10000,
+"video": true,
+"videoCompression": 50,
+"videoUploadOnPasses": true,
+
+"reporter":"mochawesome",
+
+"reporterOptions":{
+    "overwrite": false
+}
+
+
+
+}

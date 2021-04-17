@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-03T13:58:40.316Z",
+    "end": "2021-04-03T13:59:16.341Z",
+    "duration": 36025,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "078e658b-2b42-43e3-a1f2-5d598b686324",
+      "title": "",
+      "fullFile": "cypress\\integration\\teste.feature",
+      "file": "cypress\\integration\\teste.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0a34ee85-df7c-4594-a0c4-5cac2fd355a1",
+          "title": "Automatizar pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher o campo primeiro nome",
+              "fullTitle": "Automatizar pagina de cadastro Preencher o campo primeiro nome",
+              "timedOut": null,
+              "duration": 34394,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `:nth-child(1) > :nth-child(1) > .form-control`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `:nth-child(1) > :nth-child(1) > .form-control`, but never found it.\n    at TestePage.preencherCampoPrimeiroNome (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:117:10)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:75:10)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:10571:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:9914:35)",
+                "diff": null
+              },
+              "uuid": "57a19242-0116-45e1-9499-a3709f591cf7",
+              "parentUUID": "0a34ee85-df7c-4594-a0c4-5cac2fd355a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "57a19242-0116-45e1-9499-a3709f591cf7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34394,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

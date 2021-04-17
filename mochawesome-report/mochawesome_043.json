@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-17T15:42:37.858Z",
+    "end": "2021-04-17T15:43:26.563Z",
+    "duration": 48705,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "596e189b-8de6-4fec-a76c-635abb30d30b",
+      "title": "",
+      "fullFile": "cypress\\integration\\teste.feature",
+      "file": "cypress\\integration\\teste.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "368755c1-4cd6-4712-8ff5-900d742b256c",
+          "title": "Automatizar pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher cadastro",
+              "fullTitle": "Automatizar pagina de cadastro Preencher cadastro",
+              "timedOut": null,
+              "duration": 48468,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying after 10000ms: `cy.type()` failed because this element:\n\n`<input id=\"firstpassword\" type=\"password\" class=\"form-control ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength\" ng-model=\"Password\" required=\"\" minlength=\"6\" onblur=\"validatepattern(this)\">`\n\nis being covered by another element:\n\n`<ul style=\"list-style:none;max-height: 230px;overflow: scroll;\" class=\"ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all\">...</ul>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 10000ms: `cy.type()` failed because this element:\n\n`<input id=\"firstpassword\" type=\"password\" class=\"form-control ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength\" ng-model=\"Password\" required=\"\" minlength=\"6\" onblur=\"validatepattern(this)\">`\n\nis being covered by another element:\n\n`<ul style=\"list-style:none;max-height: 230px;overflow: scroll;\" class=\"ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all\">...</ul>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:162715:26)\n    at ensureDescendents (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:151114:8)\n    at ensureDescendentsAndScroll (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:151121:14)\n    at ensureElIsNotCovered (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:151255:5)\n    at runAllChecks (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:151430:52)\n    at retryActionability (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:151453:16)\n    at tryCatcher (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:10765:23)\n    at Function.Promise.attempt.Promise.try (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8039:29)\n    at tryFn (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:167065:21)\n    at whenStable (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:167103:12)\n    at http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:166598:16\n    at tryCatcher (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8882:18)\nFrom Your Spec Code:\n    at TestePage.preencherCampoSenha (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:217:40)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:129:10)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:10676:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:10019:35)",
+                "diff": null
+              },
+              "uuid": "62aa46d2-ca1c-47bc-a319-621c14bebd00",
+              "parentUUID": "368755c1-4cd6-4712-8ff5-900d742b256c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "62aa46d2-ca1c-47bc-a319-621c14bebd00"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 48468,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

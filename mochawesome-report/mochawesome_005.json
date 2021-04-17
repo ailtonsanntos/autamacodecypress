@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-01T20:04:41.799Z",
+    "end": "2021-04-01T20:06:24.736Z",
+    "duration": 102937,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f9514bf3-d111-47de-8b84-819ba36c5dad",
+      "title": "",
+      "fullFile": "cypress\\integration\\teste.feature",
+      "file": "cypress\\integration\\teste.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c778a19f-31ca-42de-92b8-e001a8476e49",
+          "title": "Automatizar pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher o campo primeiro nome",
+              "fullTitle": "Automatizar pagina de cadastro Preencher o campo primeiro nome",
+              "timedOut": null,
+              "duration": 21966,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Cypress command timeout of `10000ms` exceeded.\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Automatizar pagina de cadastro`",
+                "estack": "CypressError: Cypress command timeout of `10000ms` exceeded.\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Automatizar pagina de cadastro`\n    at cypressErr (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:174213:18)\n    at Object.errByPath (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:174264:10)\n    at http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:175857:29",
+                "diff": null
+              },
+              "uuid": "37326bc1-2984-4e20-b66f-bb394e8d2788",
+              "parentUUID": "c778a19f-31ca-42de-92b8-e001a8476e49",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "37326bc1-2984-4e20-b66f-bb394e8d2788"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 21966,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-17T15:24:58.138Z",
+    "end": "2021-04-17T15:25:35.928Z",
+    "duration": 37790,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "075773c6-90ad-4847-8726-0e35fc7c7a10",
+      "title": "",
+      "fullFile": "cypress\\integration\\teste.feature",
+      "file": "cypress\\integration\\teste.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1cdc5156-0be9-4450-9a7f-5657ac6fb729",
+          "title": "Automatizar pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher cadastro",
+              "fullTitle": "Automatizar pagina de cadastro Preencher cadastro",
+              "timedOut": null,
+              "duration": 37408,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "ReferenceError: Elements is not defined",
+                "estack": "ReferenceError: Elements is not defined\n    at TestePage.selecionarCampoLanguage (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:210:14)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:126:10)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:10674:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress\\integration\\teste.feature:10017:35)",
+                "diff": null
+              },
+              "uuid": "701ca772-5c7b-4f00-a8f2-daa4c316ce55",
+              "parentUUID": "1cdc5156-0be9-4450-9a7f-5657ac6fb729",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "701ca772-5c7b-4f00-a8f2-daa4c316ce55"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37408,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

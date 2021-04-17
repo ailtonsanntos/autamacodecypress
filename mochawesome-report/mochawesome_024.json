@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-10T13:37:12.635Z",
+    "end": "2021-04-10T13:37:37.153Z",
+    "duration": 24518,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1b43e43c-dccd-4f76-826e-53dc70545fb0",
+      "title": "",
+      "fullFile": "cypress\\integration\\teste.feature",
+      "file": "cypress\\integration\\teste.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84c677be-6670-4e50-8dea-a5f6efb7bc34",
+          "title": "Automatizar pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher o campo primeiro nome",
+              "fullTitle": "Automatizar pagina de cadastro Preencher o campo primeiro nome",
+              "timedOut": null,
+              "duration": 24105,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: //*[@id=\"basicBootstrapForm\"]/div[1]/div[2]/input",
+                "estack": "Error: Syntax error, unrecognized expression: //*[@id=\"basicBootstrapForm\"]/div[1]/div[2]/input\n    at Function.Sizzle.error (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:88423:8)\n    at Sizzle.tokenize (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:89075:11)\n    at Sizzle.select (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:89502:20)\n    at Function.Sizzle [as find] (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:87727:9)\n    at jQuery.fn.init.find (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:89758:11)\n    at new jQuery.fn.init (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:89873:40)\n    at Object.query (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:181742:10)\n    at $Cy.$$ (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:170742:17)\n    at getElements (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:159590:20)\n    at tryCatcher (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:10765:23)\n    at Function.Promise.attempt.Promise.try (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8039:29)\n    at resolveElements (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:159640:27)\n    at Context.get (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:159651:14)\n    at http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:170970:15\n    at tryCatcher (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:10765:23)",
+                "diff": null
+              },
+              "uuid": "d19f7310-e11b-4821-b263-48ffc0bb576c",
+              "parentUUID": "84c677be-6670-4e50-8dea-a5f6efb7bc34",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d19f7310-e11b-4821-b263-48ffc0bb576c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 24105,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}
